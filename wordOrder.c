@@ -32,10 +32,10 @@ int main(int argc, char **argv) {
 		order = anagramOrder(A, argv[1]);			//measure order of input within anagram
 
 		printf("Order of word %s: %ld.\n\n", argv[1], order);	//print results
+		anagramDestroy(A);
 	} else {
 		printf("Oops! You forgot to supply a word.\n\n");
 	}
-	anagramDestroy(A);
 	return 0;
 }
 
