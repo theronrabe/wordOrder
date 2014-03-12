@@ -1,0 +1,12 @@
+
+Thank you for using the wordOrder program!
+
+To use, follow these steps:
+
+	1. Navigate in a terminal to the directory containing wordOrder.c and wordOrder.h
+	2. Issue this command:
+		cc -o wordOrder wordOrder.c
+	3. Run the program by issuing this command:
+		./wordOrder [inputWord]
+
+Documentation and explanation of the program can be found in the wordOrder.c and wordOrder.h files.
