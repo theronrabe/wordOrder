@@ -22,11 +22,10 @@ typedef struct Anagram {			//Represents potential combinations of letters.
 Letter *letterCreate(char L);				//Makes new Letter
 Letter *letterDestroy(Letter *L);			//Returns pointer to next Letter
 
-Anagram *anagramCreate(char *word);			//Builds an anagram from a word
-void anagramInsertLetter(Anagram *A, char L);		//Adds a letter to the sorted anagram letter list
-int anagramTakeLetter(Anagram *A, char L);		//Returns the index of a letter in the anagram, and removes it
+Anagram *anagramCreate();				//Builds a new anagram
+unsigned long anagramOrder(char *word);			//Returns the order of the word in a sorted anagram list
+int anagramInsertLetter(Anagram *A, char L);		//Adds a letter to the sorted anagram letter list
 unsigned long anagramCombinations(Anagram *A);		//Returns the total possible combinations for the anagram
-unsigned long anagramOrder(Anagram *A, char *word);	//Returns the order of the word in a sorted anagram list
 void anagramDestroy(Anagram *A);			//Frees allocated memory
 
 unsigned long factorial(int X);				//Need this for calculating combinations
